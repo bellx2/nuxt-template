@@ -1,8 +1,18 @@
-<template>
-  <div>
-    <nuxt/>
-  </div>
+<template lang="pug">
+  div
+    nav-menu
+    nuxt
 </template>
+
+<script>
+import NavMenu from '~/components/NavMenu.vue'
+
+export default {
+  components: {
+    NavMenu
+  }
+}
+</script>
 
 <style>
 html {

@@ -1,27 +1,27 @@
 <template lang="pug">
-  section.container
-    div
-      app-logo
-      h1.title nuxt-template
-      h2.subtitle Nuxt.js project
-      dev.links
-        a.button--green(
-          href="https://nuxtjs.org/"
-          target="_blank") Documentation
-        a.button--grey(
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank") GitHub
-      </div>
-    </div>
-  </section>
+  b-container
+    b-row
+      b-col
+        app-logo
+        h1.title nuxt-template
+        h2.subtitle Nuxt.js project
+        div.links
+          a.button--green(
+            href="https://nuxtjs.org/"
+            target="_blank") Documentation
+          a.button--grey(
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank") GitHub
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import NavMenu from '~/components/NavMenu.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    NavMenu
   }
 }
 </script>

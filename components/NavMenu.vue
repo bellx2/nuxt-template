@@ -1,7 +1,8 @@
 <template lang="pug">
   b-navbar(toggleable="md" type="dark" variant="danger")
     b-navbar-brand Site Template
-    b-collapse(is-nav id="nav")
+    b-navbar-toggle(target="nav_collapse")
+    b-collapse(is-nav id="nav_collapse")
       b-navbar-nav
         b-nav-item Item1
         b-nav-item(disabled) Item2
